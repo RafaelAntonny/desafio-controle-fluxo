@@ -24,10 +24,10 @@ public class Contador {
 
         validar(limite, base);
 
-        for (int contagem = base; contagem < limite; contagem++) {
+        for (int contagem = 0; contagem < limite; contagem++) {
 
-            base++;
-            System.out.println("Imprimindo o numero: " + base);
+            contagem++;
+            System.out.println("Imprimindo o numero: " + contagem);
         }
 
     }
