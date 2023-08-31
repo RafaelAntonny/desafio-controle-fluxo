@@ -6,35 +6,35 @@ public class Contador {
         Scanner terminal = new Scanner(System.in);
 
         System.out.println("Digite o primeiro parametro: ");
-        int parametroUm = terminal.nextInt();
+        int limite = terminal.nextInt();
         System.out.println("Digite o segundo parametro: ");
-        int parametroDois = terminal.nextInt();
+        int base = terminal.nextInt();
 
         terminal.close();
 
         try {
-            contar(parametroUm, parametroDois);
+            contar(limite, base);
         } catch (Exception e) {
             System.out.println("O segundo numero deve ser maior que o primeiro");
         }
 
     }
 
-    static void contar(int parametroUm, int parametroDois) {
+    static void contar(int limite, int base) {
 
-        validar(parametroUm, parametroDois);
+        validar(limite, base);
 
-        for (int contagem = parametroDois; contagem < parametroUm; contagem++) {
+        for (int contagem = base; contagem < limite; contagem++) {
 
-            parametroDois++;
-            System.out.println("Imprimindo o numero: " + parametroDois);
+            base++;
+            System.out.println("Imprimindo o numero: " + base);
         }
 
     }
 
-    static void validar(int parametroUm, int parametroDois) throws ParametrosInvalidoException {
+    static void validar(int limite, int base) throws ParametrosInvalidoException {
 
-        if (parametroUm < parametroDois) {
+        if (limite < base) {
 
             throw new ParametrosInvalidoException();
 

@@ -1,18 +1,5 @@
-## Getting Started
+## Contador
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este app usa dois numeros dados pelo o usuario, o primeiro numero é dado como o limite e o segundo como uma base.
+O segundo numero então é incrementado até atingir o limite, enquanto o numero é incrementado o app printa os valor atual do numero base.
+O segundo numero ***DEVE*** ser maior que o primeiro para que você não tenha nemnhuma excepeção já que o programa valida se o primeiro numero é maior que o segundo
